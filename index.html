@@ -23,18 +23,27 @@
 <body class="bg-gray-900 text-white">
 
     <!-- Navbar -->
-    <nav class="bg-gray-800 p-4 flex flex-col md:flex-row justify-between items-center">
+    <nav class="bg-gray-800 p-4 flex justify-between items-center">
+        <!-- Left: Flash Logo and Text -->
         <div class="flex items-center">
-            <img alt="Flash" class="rounded-full mr-2 w-10 h-10" src="img/flash.png"/>
-            <span class="text-lg md:text-xl font-bold">Flash</span>
+            <img alt="Flash" class="rounded-full mr-2 w-10 h-10" src="img/flash.png" />
+            <span class="text-lg md:text-xl font-bold text-white">Flash</span>
         </div>
-        <div class="mt-2 md:mt-0">
-            <a class="bg-yellow-500 text-white px-5 py-2 rounded text-sm md:text-base" href="https://discord.com/oauth2/authorize?client_id=1243802982626099224">Invite Flash</a>
+
+        <!-- Right: Invite Flash Button -->
+        <div>
+            <a class="bg-yellow-500 text-white px-5 py-2 rounded text-sm md:text-base" href="https://discord.com/oauth2/authorize?client_id=1243802982626099224">
+                Invite Flash
+            </a>
         </div>
     </nav>
 
+
+
     <!-- Header -->
     <header class="text-center p-4">
+        <img alt="Flash banner" class="mx-auto mb-4 w-full" height="200" src="img/banner.jpg" width="800"/>
+        
         <img alt="Flash avatar" class="rounded-full mx-auto mb-4 w-20 h-20 md:w-24 md:h-24" src="img/flash.png"/>
         <h1 class="text-2xl md:text-3xl font-bold">Flash</h1>
         <div class="space-y-2 md:space-x-4 mt-4">
@@ -61,37 +70,37 @@
         <h1 class="text-2xl text-center font-bold mb-4">Features</h1>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center border border-black mb-6">
-                <img alt="Security" class="mx-auto mb-4" height="50" src="" width="50"/>
+                <img alt="Security" class="mx-auto mb-4" height="50" src="img/Feature/mod.png" width="50"/>
                 <h2 class="text-xl font-semibold mb-2">Security</h2>
                 <p class="text-gray-400">Protect your server from unauthorized changes and malicious attacks with Flash's robust features, ensuring your community remains secure and stable.</p>
             </div>
 
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center border border-black mb-6">
-                <img alt="Utility" class="mx-auto mb-4" height="50" src="https://cdn.discordapp.com/attachments/1250649346345537666/1322743750719705118/1265995492735844425.png" width="50"/>
+                <img alt="Utility" class="mx-auto mb-4" height="50" src="img/Feature/uni.png" width="50"/>
                 <h2 class="text-xl font-semibold mb-2">Utility</h2>
                 <p class="text-gray-400">Access a suite of helpful tools and commands, such as avatar, banner, userinfo, serverinfo, and many more functions, to enhance your server experience.</p>
             </div>
 
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center border border-black mb-6">
-                <img alt="Moderation" class="mx-auto mb-4" height="50" src="https://cdn.discordapp.com/attachments/1250649346345537666/1322736424276983931/1181578536029540363.png" width="50"/>
+                <img alt="Moderation" class="mx-auto mb-4" height="50" src="img/Feature/ex.png" width="50"/>
                 <h2 class="text-xl font-semibold">Moderation</h2>
                 <p class="text-gray-400">Equip your moderators with powerful tools to manage your server effectively, including user management, message control, and customizable moderation actions.</p>
             </div>
 
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center border border-black mb-6">
-                <img alt="Giveaway" class="mx-auto mb-4" height="50" src="https://cdn.discordapp.com/attachments/1250649346345537666/1322736424859992204/1320015601942532189.png" width="50"/>
+                <img alt="Giveaway" class="mx-auto mb-4" height="50" src="img/Feature/giv.png" width="50"/>
                 <h2 class="text-xl font-semibold mb-2">Giveaway</h2>
                 <p class="text-gray-400">Boost engagement with Flash, Our Giveaway command makes hosting and managing giveaways a breeze!</p>
             </div>
 
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center border border-black mb-6">
-                <img alt="Welcome" class="mx-auto mb-4" height="50" src="https://cdn.discordapp.com/attachments/1250649346345537666/1322736425082556509/1260026373293080722.png" width="50"/>
+                <img alt="Welcome" class="mx-auto mb-4" height="50" src="img/Feature/wel.png" width="50"/>
                 <h2 class="text-xl font-semibold mb-2">Welcome</h2>
                 <p class="text-gray-400">Create a warm and welcoming atmosphere for new members with customizable welcome messages, role assignments, and introductory information to help them get started.</p>
             </div>
 
             <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center border border-black mb-6">
-                <img alt="Ticket" class="mx-auto mb-4" height="50" src="https://cdn.discordapp.com/attachments/1250649346345537666/1322736425388609567/1266263008414400574.png" width="50"/>
+                <img alt="Ticket" class="mx-auto mb-4" height="50" src="img/Feature/tic.png" width="50"/>
                 <h2 class="text-xl font-semibold mb-2">Ticket</h2>
                 <p class="text-gray-400">Utilize the ticket system to manage support requests, report issues, or seek help from server staff in an organized and efficient manner.</p>
             </div>
@@ -102,72 +111,98 @@
         </div>
     </div>
 
-    <!-- Our Team Section -->
-    <section class="mb-8">
-        <h2 class="text-2xl text-center font-bold mb-4">Our Team</h2>
-        <div class="carousel overflow-hidden">
-            <div class="carousel-item bg-gray-800 p-4 rounded flex items-center">
-                <img alt="Profile picture of Kartik Exe" class="rounded-full mr-4 w-10 h-10 md:w-12 md:h-12" src="img/staff/k.gif"/>
+<!-- Our Team Section -->
+<section class="mb-8">
+    <h2 class="text-2xl text-center font-bold mb-4">Our Team</h2>
+    <div class="carousel overflow-hidden relative">
+        <div class="flex transition-transform duration-500" id="carousel-inner">
+            <div class="carousel-item bg-gray-800 p-4 rounded flex items-center min-w-full">
+                <img alt="Profile picture of Kartik Exe" class="rounded-full mr-4" height="50" src="img/staff/k.gif" width="50" />
                 <div>
-                    <h3 class="text-lg md:text-xl font-bold">KARTIK EXE</h3>
-                    <p class="text-sm md:text-base">Lead Developer/Owner</p>
+                    <h3 class="text-xl font-bold">KARTIK EXE</h3>
+                    <p>Lead Developer/Owner</p>
                 </div>
             </div>
-            <!-- Add other team members as needed -->
+            <div class="carousel-item bg-gray-800 p-4 rounded flex items-center min-w-full">
+                <img alt="Profile picture of Ryan" class="rounded-full mr-4" height="50" src="img/staff/r.gif" width="50" />
+                <div>
+                    <h3 class="text-xl font-bold">RY4N</h3>
+                    <p>Co-Developer/Owner</p>
+                </div>
+            </div>
+            <div class="carousel-item bg-gray-800 p-4 rounded flex items-center min-w-full">
+                <img alt="Profile picture of Silent Spy" class="rounded-full mr-4" height="50" src="img/staff/o.png" width="50" />
+                <div>
+                    <h3 class="text-xl font-bold">Silent Spy</h3>
+                    <p>Owner</p>
+                </div>
+            </div>
+            <div class="carousel-item bg-gray-800 p-4 rounded flex items-center min-w-full">
+                <img alt="Profile picture of Mr. Sk" class="rounded-full mr-4" height="50" src="img/staff/m.gif" width="50" />
+                <div>
+                    <h3 class="text-xl font-bold">Mr. Sk</h3>
+                    <p>Web Developer</p>
+                </div>
+            </div>
         </div>
-        <div class="flex justify-center mt-4">
-            <button class="bg-gray-700 text-yellow-500 px-2 py-1 rounded-full mx-1" onclick="prevSlide()">
-                <i class="fa-solid fa-arrow-left" style="color: #FFD43B;"></i>
-            </button>
-            <button class="bg-gray-700 text-yellow-500 px-2 py-1 rounded-full mx-1" onclick="nextSlide()">
-                <i class="fa-solid fa-arrow-right" style="color: #FFD43B;"></i>
-            </button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="mt-12 mb-12 text-center text-gray-400">
-        <p>© 2025 All Rights Reserved by Flash | Developer: <a href="https://guns.lol/kartik_exe" class="text-yellow-400">Social Links</a></p>
-    </footer>
-
-    <!-- Navigation Links -->
-    <div class="flex items-center justify-center border border-black p-4 shadow-lg">
-        <ul class="flex space-x-4">
-            <li><a class="text-yellow-500" href="index.html">Home</a></li>
-            <li><a class="hover:text-yellow-500" href="command.html">Commands</a></li>
-            <li><a class="hover:text-yellow-500" href="Terms.html">Terms</a></li>
-            <li><a class="hover:text-yellow-500" href="Policy.html">Policy</a></li>
-            <li><a class="hover:text-yellow-500" href="https://discord.gg/4D4M2HfPyQ">Support</a></li>
-        </ul>
     </div>
+    <div class="flex justify-center mt-4">
+        <button class="bg-gray-700 text-yellow-500 px-2 py-1 rounded-full mx-1" onclick="prevSlide()">
+            <i class="fa-solid fa-arrow-left" style="color: #FFD43B;"></i>
+        </button>
+        <button class="bg-gray-700 text-yellow-500 px-2 py-1 rounded-full mx-1" onclick="nextSlide()">
+            <i class="fa-solid fa-arrow-right" style="color: #FFD43B;"></i>
+        </button>
+    </div>
+</section>
 
-    <script>
-        let currentIndex = 0;
+<footer class="mt-12 mb-12 text-center text-gray-400">
+    <p>© 2025 All Rights Reserved by Flash | Developer: <a href="https://guns.lol/kartik_exe" class="text-yellow-400">Social Links</a></p>
+</footer>
 
-        function showSlide(index) {
-            const slides = document.querySelectorAll('.carousel-item');
-            if (index >= slides.length) {
-                currentIndex = 0;
-            } else if (index < 0) {
-                currentIndex = slides.length - 1;
-            } else {
-                currentIndex = index;
-            }
-            slides.forEach((slide, i) => {
-                slide.style.transform = `translateX(-${currentIndex * 100}%)`;
-            });
+<div class="flex items-center justify-center border border-black p-4 shadow-lg">
+    <ul class="flex space-x-4">
+        <li><a class="text-yellow-500" href="index.html">Home</a></li>
+        <li><a class="hover:text-yellow-500" href="command.html">Commands</a></li>
+        <li><a class="hover:text-yellow-500" href="Terms.html">Terms</a></li>
+        <li><a class="hover:text-yellow-500" href="Policy.html">Policy</a></li>
+        <li><a class="hover:text-yellow-500" href="https://discord.gg/4D4M2HfPyQ">Support</a></li>
+    </ul>
+</div>
+
+<script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const slides = document.getElementById('carousel-inner');
+        const totalSlides = slides.children.length;
+
+        if (index >= totalSlides) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = totalSlides - 1;
+        } else {
+            currentIndex = index;
         }
 
-        function nextSlide() {
-            showSlide(currentIndex + 1);
-        }
+        const offset = -currentIndex * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+    }
 
-        function prevSlide() {
-            showSlide(currentIndex - 1);
-        }
+    function nextSlide() {
+        showSlide(currentIndex + 1);
+    }
 
-        // Auto-scroll every 5 seconds
-        setInterval(nextSlide, 5000);
-    </script>
+    function prevSlide() {
+        showSlide(currentIndex - 1);
+    }
+
+    // Auto-scroll every 5 seconds
+    setInterval(nextSlide, 5000);
+
+    // Initial state
+    showSlide(0);
+</script>
+
 </body>
 </html>
